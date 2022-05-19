@@ -1,0 +1,88 @@
+body {
+    background-color: #ecf5f4;
+}
+
+/* ------------------Верхнее меню--------------------- */
+
+.header ul {
+    /*позиционирование по осям*/
+    display: flex;
+    /*Отступ справа*/
+    padding-right: 40px;
+}
+
+/*ссылки*/
+.header li a {
+    /*шрифт*/
+    font-family: Verdana;
+    /*толщина шрифта*/
+    font-weight: bold;
+    /*убрать декорирование ссылки*/
+    text-decoration: none;
+    /*Цвет шрифта*/
+    color: #ece5d9; 
+    /*блочный элемент, чтоб весь пункт был ссылкой, а не только текст*/
+    display: block;
+    /*текст по центру*/
+    text-align: center;
+    /*текст не переносится при изменении размеров страницы*/
+    white-space: nowrap;
+}
+
+/*пункты меню*/
+.header li {
+    /* Убрать точки */
+    list-style-type: none;
+    /* Отображать как строчный элемент */
+    /* Внутренние отступы */
+    padding: 10px;
+    /* Цыет пунктов меню */
+    background-color: #b29868;
+    /*коефициент увеличения блока. пока у всех элементов строки он одинаков - свободное пространство заполняется равномерно. Здесь нужен для отго, чтобы меню растягивалось по всей ширине. Не применимо без подключения display: flex */
+    flex-grow: 1;
+}
+
+/*пункты меню при наведении*/
+.header li:hover {
+    background-color: #d69547;
+}
+
+/*пункты меню при нажатии*/
+.header li:active {
+    background-color: #100805;
+}
+
+/*первый элемент меню*/
+.header li:first-child {
+    /* Скругление слева */
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/*последний элемент меню*/
+.header li:last-child {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/*кнопка На главную*/
+.header img {
+    display: block;
+    width: 70%;
+    margin: 0px auto;
+}
+/*кнопка На главную при наведении*/
+.header img:hover {
+    content: url(img/logo_hover.png);
+    display: block;
+    margin: 0px auto;
+}
+/* ------------------Банер--------------------- */
+.ban {
+    margin: 2%;
+}
+
+.ban img{
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+}
