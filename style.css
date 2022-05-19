@@ -86,3 +86,60 @@ body {
     width: 90%;
     margin: 0px auto;
 }
+/* ------------------Каталог--------------------- */
+.item {
+
+     /*шрифт*/
+    font-family: Verdana;
+    /*убрать декорирование ссылки*/
+    text-decoration: none;
+    /*Цвет шрифта*/
+    color: black; 
+    text-align: justify;
+}
+.item div {
+    height: 250px;
+}
+.item text{
+    margin-left: 10px;
+}
+.item div:nth-child(2n+1){
+    background-color: #ece5d9;    
+}
+.item div:nth-child(2n){
+    background-color: #b29868;   
+}
+.item img{
+    width: 250px;
+    float: left;
+}
+.item a{
+    /*шрифт*/
+    font-family: Verdana;
+    /*толщина шрифта*/
+    font-weight: bold;
+    /*убрать декорирование ссылки*/
+    text-decoration: none;
+    /*Цвет шрифта*/
+    color: black; 
+    padding: 10px;
+}
+.item a:hover{
+    /*Цвет шрифта*/
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+.item H1{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.item sp {
+    background-color: black;
+    color: white;
+    /*толщина шрифта*/
+    margin-bottom: auto;
+    font-weight: bold;
+    padding: 5px;
+}
